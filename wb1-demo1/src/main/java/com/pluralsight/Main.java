@@ -12,7 +12,24 @@ public class Main {
         String greeting;
 
         greeting = word1 + " " + word2 + "!";
-        
+
         System.out.println(greeting);
+
+        ///////////////////////////
+
+        float taxRate = 0.15f;
+
+        long aLargeNumber = 2222222L;
+
+       /// //////////////////////////
+
+        long aLong;
+        int bInt;
+
+        aLong = 7777777L;
+        bInt = (int) aLong;
+
+
+
     }
 }
