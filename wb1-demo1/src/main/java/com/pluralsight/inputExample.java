@@ -9,11 +9,11 @@ public class inputExample {
 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("What is your name? " );
+        System.out.println("What is your name? ");
         String name;
         name = scanner.nextLine();
 
-        System.out.println("Hi" + name + ",lets do some math");
+        System.out.println("Hi " + name + ",lets do some math");
 
 
         System.out.println("What is the first Number?");
