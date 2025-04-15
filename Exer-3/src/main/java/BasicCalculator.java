@@ -6,7 +6,7 @@ public class BasicCalculator {
 
         Scanner scanner = new Scanner(System.in);
 
-     // Exercise 3
+
      // Step 1:
 
         System.out.println("Whats your name?");
@@ -23,7 +23,7 @@ public class BasicCalculator {
 
         double answer = number * number1;
 
-        System.out.printf("The answer %.2f and %.2f is = %.4f\n", number,number1, number * number1 );
+        System.out.printf("The answer of %.2f and %.2f is = %.2f\n", number,number1, number * number1 );
 
 
 
