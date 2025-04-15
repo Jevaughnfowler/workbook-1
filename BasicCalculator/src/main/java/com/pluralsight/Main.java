@@ -1,13 +1,16 @@
+
+
+package com.pluralsight;
+
 import java.util.Scanner;
 
-public class BasicCalculator {
+public class Main {
 
     public static void main(String[] args){
 
         Scanner scanner = new Scanner(System.in);
 
-
-     // Step 1:
+        // Step 1:
 
         System.out.println("Whats your name?");
         String name;
@@ -24,9 +27,6 @@ public class BasicCalculator {
         double answer = number * number1;
 
         System.out.printf("The answer of %.2f and %.2f is = %.2f\n", number,number1, number * number1 );
-
-
-
-
     }
+
 }
