@@ -8,18 +8,27 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Enter your name");
+        // stating a name
+
+        System.out.println("Enter your name ");
         String name;
         name = scanner.nextLine();
 
-        System.out.println("Enter Your Hours Worked");
-        double hours = scanner.nextDouble();
+        //stating the hours worked
+        System.out.println("Enter Your Hours Worked ");
+        double hours;
+        hours = scanner.nextDouble();
 
-        System.out.println("Enter pay rate");
-        double rate = scanner.nextDouble();
+        //The rate worked
+        System.out.println("Enter pay rate ");
+        double rate;
+        rate = scanner.nextDouble();
 
+        //calculating the out
         double output = hours * rate;
 
-        System.out.printf("grossPay %.2f and %.2f is = %.2f\n", hours, rate, hours * rate);
+        //showing the result
+        System.out.printf("hours %.2f, rate %.2f = %.2f\n", hours, rate, hours * rate);
+
     }
 }
