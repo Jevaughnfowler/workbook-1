@@ -9,6 +9,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         int choice;
 
+
         //Welcome, prompt for additional response
         System.out.println("Hi! Welcome To The SandwichShop");
         System.out.println("Here is our menu");
@@ -19,6 +20,15 @@ public class Main {
 
         System.out.println("Choose your Option (1,2)");
         choice = scanner.nextInt();
+
+        //adding options for the sandwich
+        System.out.println("Would you like your sandwich loaded (Yes/no) ?");
+        System.out.println("Please select your choice");
+        System.out.println("1. Yes regular (+$1.00)");
+        System.out.println("2. Yes Large (+$1.75)");
+        System.out.println("3. No");
+        int select = scanner.nextInt();
+
 
         //Checking age for discount
         System.out.println("Enter your age: ");
@@ -40,10 +50,12 @@ public class Main {
 
         //Calculating the Discount
         double price = 0.0;
-        if (choice == 1) {
-            price = 5.45;
+        if (choice == 1){
+            price = 5.45; if (select == 1)
+                price = 6.45;
         } else if (choice == 2) {
-            price = 8.95;
+            price = 8.95; if (select == 2)
+                price = 10.00;
         } else {
             System.out.println("No selection");
             return;
@@ -56,6 +68,8 @@ public class Main {
         System.out.println("Price $" + price);
         System.out.println("Discount applied $" + discountPrice);
         System.out.println("TotalAmount $" + totalAmount);
+
+
 
 
 
